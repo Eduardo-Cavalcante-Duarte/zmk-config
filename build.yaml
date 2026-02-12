@@ -18,3 +18,15 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+
+# build.yaml
+include:
+  # Firmware para o Dongle (O cérebro que fica no PC)
+#  - board: nice_nano_v2
+#    shield: la_usurpadora_dongle
+  # Firmware para o lado Esquerdo
+  - board: nice_nano_v2
+    shield: la_usurpadora_left
+  # Firmware para o lado Direito
+  - board: nice_nano_v2
+    shield: la_usurpadora_right

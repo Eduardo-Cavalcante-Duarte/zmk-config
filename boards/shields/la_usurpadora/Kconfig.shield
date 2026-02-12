@@ -1,0 +1,5 @@
+config SHIELD_LA_USURPADORA_LEFT
+    def_bool $(shields_list_contains,la_usurpadora_left)
+
+config SHIELD_LA_USURPADORA_RIGHT
+    def_bool $(shields_list_contains,la_usurpadora_right)

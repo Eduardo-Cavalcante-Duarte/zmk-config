@@ -3,29 +3,22 @@
 # for instructions.
 
 file_format: "1"
-id: a_usurpadora
-name: A usurpadora
-type: board
-arch: arm
+id: la_usurpadora
+name: A Usurpadora
+type: shield
 
 # Set this to a URL that documents the keyboard.
-url: https://example.com
+# url: https://example.com
 
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 features:
   - keys
-  - studio  # Remove this line if your keyboard will not support ZMK Studio
+  - encoder
 
-outputs:
-  - usb
-  - ble
+requires:
+  - pro_micro
 
 siblings:
-  - a_usurpadora_left
-  - a_usurpadora_right
-# If your board has multiple revisions in its board.yml, create a matching list here:
-# revisions:
-#   - 2.0.0
-#   - 1.0.0
-# default_revision: 2.0.0
+  - la_usurpadora_left
+  - la_usurpadora_right
