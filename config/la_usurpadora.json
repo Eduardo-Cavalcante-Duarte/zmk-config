@@ -1,0 +1,17 @@
+{
+  "file_format": "1",
+  "id": "la_usurpadora",
+  "name": "A Usurpadora",
+  "type": "shield",
+  "features": [
+    "keys",
+    "encoder"
+  ],
+  "requires": [
+    "pro_micro"
+  ],
+  "siblings": [
+    "la_usurpadora_left",
+    "la_usurpadora_right"
+  ]
+}
