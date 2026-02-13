@@ -20,3 +20,17 @@
         , <&pro_micro 6 GPIO_ACTIVE_HIGH>
         ;
 };
+
+left_encoder: encoder_left {
+    compatible = "alps,ec11";
+    a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // PINO A (ajuste se necessário)
+    b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // PINO B (ajuste se necessário)
+    steps = <80>; // Ajuste conforme o modelo do seu encoder
+};
+
+/* Registra os sensores no sistema */
+sensors: sensors {
+    compatible = "zmk,keymap-sensors";
+    sensors = <&left_encoder>;
+    triggers-per-rotation = <20>; // Geralmente 20 para encoders comuns
+};
