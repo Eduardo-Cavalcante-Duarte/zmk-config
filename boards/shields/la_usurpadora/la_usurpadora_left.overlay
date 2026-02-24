@@ -1,36 +1,33 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
-// instructions.
-
 #include "la_usurpadora.dtsi"
 
-&physical-layout {
-  kscan = <&kscan>;
-  transform = <&default_transform>;
+/ {
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
+        b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
+        steps = <80>; 
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+};
+
+&physical_layout {
+    kscan = <&kscan>;
+    transform = <&default_transform>;
 };
 
 &kscan {
     col-gpios
-        = <&pro_micro 1 GPIO_ACTIVE_HIGH> // D1 (006 na PCB)
-        , <&pro_micro 0 GPIO_ACTIVE_HIGH> // D0 (008 na PCB)
-        , <&pro_micro 2 GPIO_ACTIVE_HIGH> // D2 (017 na PCB)
-        , <&pro_micro 3 GPIO_ACTIVE_HIGH> // D3 (020 na PCB)
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH> // D4 (022 na PCB)
-        , <&pro_micro 5 GPIO_ACTIVE_HIGH> // D5 (024 na PCB)
+        = <&pro_micro 1 GPIO_ACTIVE_HIGH> 
+        , <&pro_micro 0 GPIO_ACTIVE_HIGH> 
+        , <&pro_micro 2 GPIO_ACTIVE_HIGH> 
+        , <&pro_micro 3 GPIO_ACTIVE_HIGH> 
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH> 
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH> 
         , <&pro_micro 6 GPIO_ACTIVE_HIGH>
         ;
-};
-
-left_encoder: encoder_left {
-    compatible = "alps,ec11";
-    a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // PINO A (ajuste se necessário)
-    b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // PINO B (ajuste se necessário)
-    steps = <80>; // Ajuste conforme o modelo do seu encoder
-};
-
-/* Registra os sensores no sistema */
-sensors: sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&left_encoder>;
-    triggers-per-rotation = <20>; // Geralmente 20 para encoders comuns
 };
