@@ -1,19 +1,16 @@
+#include <dt-bindings/zmk/matrix_transform.h>
 #include "../la_usurpadora/la_usurpadora.dtsi"
 
 / {
-    /delete-node/ kscan;
-};
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,matrix-transform = &default_transform;
+    };
 
-/ {
-    mock_kscan: mock_kscan {
+    mock_kscan: kscan {
         compatible = "zmk,kscan-mock";
         columns = <14>; 
         rows = <6>;
         events = <0>;
-    };
-
-    chosen {
-        zmk,kscan = &mock_kscan
-        zmk,matrix-transform = &default_transform;
     };
 };
