@@ -15,7 +15,6 @@ type: shield
 features:
   - keys
   - encoder
-  - studio
 
 requires:
   - pro_micro
