@@ -13,6 +13,11 @@
         sensors = <&right_encoder>;
         triggers-per-rotation = <20>;
     };
+
+    chosen {
+        zmk,kscan = &kscan; // ou &mock_kscan no dongle
+        zmk,matrix-transform = &default_transform;
+    };
 };
 
 &kscan {

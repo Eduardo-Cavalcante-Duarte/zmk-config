@@ -5,14 +5,15 @@
 };
 
 / {
-    chosen {
-        zmk,kscan = &mock_kscan;
-    };
-
     mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <14>; 
         rows = <6>;
         events = <0>;
+    };
+
+    chosen {
+        zmk,kscan = &mock_kscan
+        zmk,matrix-transform = &default_transform;
     };
 };
