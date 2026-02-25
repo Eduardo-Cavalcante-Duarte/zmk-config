@@ -24,6 +24,8 @@ include:
   # Firmware para o Dongle (O cérebro que fica no PC)
   - board: nice_nano_v2
     shield: la_usurpadora_dongle
+    snippets: 
+      - studio-rpc-usb-uart
   # Firmware para o lado Esquerdo
   - board: nice_nano_v2
     shield: la_usurpadora_left
