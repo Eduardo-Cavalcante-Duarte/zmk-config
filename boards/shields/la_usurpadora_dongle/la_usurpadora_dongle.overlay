@@ -1,23 +1,21 @@
+#include <dt-bindings/zmk/matrix_transform.h>
 #include "../la_usurpadora/la_usurpadora.dtsi"
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &physical_layout_dongle;
+        zmk,physical-layout = &default_layout;
     };
 
     mock_kscan: kscan {
         compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
+        columns = <14>;
+        rows = <6>;
         events = <0>;
     };
+};
 
-    physical_layout_dongle: physical_layout_dongle {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
-        kscan = <&mock_kscan>;
-    };
+&default_layout {
+    kscan = <&mock_kscan>;
 };
