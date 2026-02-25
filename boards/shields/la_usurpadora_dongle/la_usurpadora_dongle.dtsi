@@ -1,5 +1,5 @@
 / {
-    matrix_transform_default: matrix_transform {
+    default: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <6>;
         columns = <12>;
@@ -12,10 +12,5 @@
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10) RC(4,11)
             RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,5) RC(5,6) RC(5,7) RC(5,8) RC(5,9) RC(5,10) RC(5,11)
         >;
-    };
-
-    chosen {
-        zmk,matrix-transform = &matrix_transform_default;
-        zmk,physical-layout = &default_layout;
     };
 };
