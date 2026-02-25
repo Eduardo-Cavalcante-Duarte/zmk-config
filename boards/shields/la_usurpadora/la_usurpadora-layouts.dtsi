@@ -1,6 +1,13 @@
 #include <physical_layouts.dtsi>
 
 / {
+
+    default_transform: transform {
+        compatible = "zmk,physical-layout-transform";
+        columns = <14>;
+        rows = <6>;
+    };
+
     default_layout: physical-layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
