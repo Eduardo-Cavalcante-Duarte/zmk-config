@@ -7,14 +7,15 @@
         zmk,physical-layout = &default_layout;
     };
 
-    &default_layout {
-      transform = &default_transform;
-    };
-
     mock_kscan: kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
+};
+
+&default_layout {
+    transform = <&default_transform>;
+    kscan = <&mock_kscan>;
 };
