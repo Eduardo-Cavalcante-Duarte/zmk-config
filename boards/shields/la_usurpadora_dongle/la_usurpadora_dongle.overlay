@@ -16,7 +16,6 @@
     };
 };
 
-/* Referência externa */
 &default_layout {
     kscan = <&mock_kscan>;
 };
