@@ -6,9 +6,6 @@
 
 #include "la_usurpadora.dtsi"
 #include "la_usurpadora-layouts.dtsi"
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-#include <behaviors/input_gestures_accel.dtsi>
 
 &physical_layout0 {
     transform = <&default_transform>;
