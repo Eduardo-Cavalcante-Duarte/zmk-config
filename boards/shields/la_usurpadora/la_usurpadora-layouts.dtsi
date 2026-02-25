@@ -1,22 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_layout: physical_layout {
+    default_layout: physical-layout {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
+        display-name = "Default Layout";
         transform = <&default_transform>;
-
-        /* O Studio exige o nó 'keys'. 
-           Para evitar erro de label, usamos coordenadas manuais.
-           Cada par <0 0> representa uma tecla. 
-           Coloquei o suficiente para cobrir um teclado grande.
-        */
-        keys = <
-            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-            0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-        >;
     };
 };
