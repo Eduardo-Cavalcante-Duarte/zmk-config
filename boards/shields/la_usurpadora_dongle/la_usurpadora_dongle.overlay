@@ -1,3 +1,5 @@
+#include "../la_usurpadora/la_usurpadora.dtsi"
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
