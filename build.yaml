@@ -30,3 +30,5 @@ include:
   # Firmware para o lado Direito
   - board: nice_nano_v2
     shield: la_usurpadora_right
+  - board: nice_nano_v2
+    shield: settings_reset
