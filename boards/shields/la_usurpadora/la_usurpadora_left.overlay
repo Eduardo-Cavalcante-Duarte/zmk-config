@@ -15,9 +15,8 @@
     };
 };
 
-&physical_layout {
+&default_layout {
     kscan = <&kscan>;
-    transform = <&default_transform>;
 };
 
 &kscan {
