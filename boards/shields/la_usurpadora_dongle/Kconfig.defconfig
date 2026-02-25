@@ -6,7 +6,6 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# Define o nome que aparece no Bluetooth
 config ZMK_KEYBOARD_NAME
     default "La Usurpadora"
 
