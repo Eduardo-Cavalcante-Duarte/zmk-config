@@ -5,7 +5,6 @@
 */
 
 #include "la_usurpadora.dtsi"
-#include "split_input.dtsi"
 #include "la_usurpadora-layouts.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
