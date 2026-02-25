@@ -1,13 +1,26 @@
-if SHIELD_LA_USURPADORA_LEFT
-
+# Define o mesmo nome para todo mundo, assim eles se reconhecem
 config ZMK_KEYBOARD_NAME
-    default "A Usurpadora"
+    default "La Usurpadora"
 
-endif # SHIELD_LA_USURPADORA_LEFT
-
+# Configuração para as METADES (Peripherals)
 if SHIELD_LA_USURPADORA_LEFT || SHIELD_LA_USURPADORA_RIGHT
 
 config ZMK_SPLIT
     default y
 
-endif # SHIELD_LA_USURPADORA_LEFT || SHIELD_LA_USURPADORA_RIGHT
+# Isso avisa que elas são periféricos, não o cérebro do teclado
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
+
+# Configuração para o DONGLE (Central)
+if SHIELD_LA_USURPADORA_DONGLE
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
