@@ -4,7 +4,7 @@
     default_layout: physical-layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        transform = &default;
+        transform = <&default>;
         keys = <
         /* Row 0 */
         &key_physical_attrs 0 0  &key_physical_attrs 1 0  &key_physical_attrs 2 0  &key_physical_attrs 3 0  &key_physical_attrs 4 0
