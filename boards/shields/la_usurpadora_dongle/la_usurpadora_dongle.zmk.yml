@@ -2,3 +2,8 @@ file_format: "1"
 id: la_usurpadora_dongle
 name: La Usurpadora Dongle
 type: shield
+siblings:
+  - la_usurpadora_left
+  - la_usurpadora_right
+features:
+  - studio
