@@ -8,7 +8,7 @@
         zmk,physical-layout = &default_layout;
     };
 
-    mock_kscan: kscan {
+    mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <14>; 
         rows = <6>;
@@ -18,4 +18,5 @@
 
 &default_layout {
     kscan = <&mock_kscan>;
+    transform = <&default_transform>;
 };
