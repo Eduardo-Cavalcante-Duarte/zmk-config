@@ -1,0 +1,22 @@
+/ {
+    matrix_transform: matrix_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <1>;
+        rows = <1>;
+        map = <RC(0,0)>;
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&matrix_transform_0>;
+        keys = <
+            &kp A
+        >;
+    };
+
+    chosen {
+        zmk,matrix-transform = &matrix_transform_0;
+        zmk,physical-layout = &physical_layout_0;
+    };
+};
