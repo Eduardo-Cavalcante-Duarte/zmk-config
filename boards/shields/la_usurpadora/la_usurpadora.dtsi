@@ -1,20 +1,6 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
-// instructions.
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "la_usurpadora-layouts.dtsi"
-
 / {
-    chosen {
-        zmk,physical-layout = &default_layout;
-    };
-
-    default_layout: physical-layout {
-      kscan = <&kscan>;
-      transform = <&default_transform>;
-    };
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
