@@ -1,4 +1,4 @@
-#include "la_usurpadora.dtsi"
+#include "la_usurpadora/la_usurpadora.dtsi"
 
 / {
     chosen {
