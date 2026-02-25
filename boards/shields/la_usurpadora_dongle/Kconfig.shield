@@ -1,2 +1,0 @@
-config SHIELD_LA_USURPADORA_DONGLE
-    def_bool $(shields_list_contains,la_usurpadora_dongle)

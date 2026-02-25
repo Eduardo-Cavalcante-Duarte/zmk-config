@@ -15,6 +15,7 @@ type: shield
 features:
   - keys
   - encoder
+  - dongle
 
 requires:
   - pro_micro
@@ -22,3 +23,4 @@ requires:
 siblings:
   - la_usurpadora_left
   - la_usurpadora_right
+  - la_usurpadora_dongle
