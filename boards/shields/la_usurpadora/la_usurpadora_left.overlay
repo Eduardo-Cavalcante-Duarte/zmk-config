@@ -15,10 +15,6 @@
     };
 };
 
-&default {
-    kscan = <&kscan>;
-};
-
 &kscan {
     col-gpios
         = <&pro_micro 1 GPIO_ACTIVE_HIGH> 
