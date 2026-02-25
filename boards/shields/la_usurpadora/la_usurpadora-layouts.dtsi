@@ -1,13 +1,70 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_layout: physical-layout {
+    default_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
-        kscan = <&kscan>;
+
         keys
-          = <&direct_physical_layout>
-          ;
+            = <&dts_physical_layout_server 0 0>
+            , <&dts_physical_layout_server 1 0> 
+            , <&dts_physical_layout_server 2 0>
+            , <&dts_physical_layout_server 3 0>
+            , <&dts_physical_layout_server 4 0>
+            , <&dts_physical_layout_server 5 0>
+            , <&dts_physical_layout_server 6 0>
+            , <&dts_physical_layout_server 7 0>
+            , <&dts_physical_layout_server 8 0>
+            , <&dts_physical_layout_server 9 0>
+            , <&dts_physical_layout_server 10 0>
+            , <&dts_physical_layout_server 11 0>
+            , <&dts_physical_layout_server 12 0>
+            , <&dts_physical_layout_server 13 0>
+            , <&dts_physical_layout_server 14 0>
+            , <&dts_physical_layout_server 15 0>
+            , <&dts_physical_layout_server 16 0>
+            , <&dts_physical_layout_server 17 0>
+            , <&dts_physical_layout_server 18 0>
+            , <&dts_physical_layout_server 19 0>
+            , <&dts_physical_layout_server 20 0>
+            , <&dts_physical_layout_server 21 0>
+            , <&dts_physical_layout_server 22 0>
+            , <&dts_physical_layout_server 23 0>
+            , <&dts_physical_layout_server 24 0>
+            , <&dts_physical_layout_server 25 0>
+            , <&dts_physical_layout_server 26 0>
+            , <&dts_physical_layout_server 27 0>
+            , <&dts_physical_layout_server 28 0>
+            , <&dts_physical_layout_server 29 0>
+            , <&dts_physical_layout_server 30 0>
+            , <&dts_physical_layout_server 31 0>
+            , <&dts_physical_layout_server 32 0>
+            , <&dts_physical_layout_server 33 0>
+            , <&dts_physical_layout_server 34 0>
+            , <&dts_physical_layout_server 35 0>
+            , <&dts_physical_layout_server 36 0>
+            , <&dts_physical_layout_server 37 0>
+            , <&dts_physical_layout_server 38 0>
+            , <&dts_physical_layout_server 39 0>
+            , <&dts_physical_layout_server 40 0>
+            , <&dts_physical_layout_server 41 0>
+            , <&dts_physical_layout_server 42 0>
+            , <&dts_physical_layout_server 43 0>
+            , <&dts_physical_layout_server 44 0>
+            , <&dts_physical_layout_server 45 0>
+            , <&dts_physical_layout_server 46 0>
+            , <&dts_physical_layout_server 47 0>
+            , <&dts_physical_layout_server 48 0>
+            , <&dts_physical_layout_server 49 0>
+            , <&dts_physical_layout_server 50 0>
+            , <&dts_physical_layout_server 51 0>
+            , <&dts_physical_layout_server 52 0>
+            , <&dts_physical_layout_server 53 0>
+            , <&dts_physical_layout_server 54 0>
+            , <&dts_physical_layout_server 55 0>
+            , <&dts_physical_layout_server 56 0>
+            , <&dts_physical_layout_server 57 0>
+            ;
     };
 };
