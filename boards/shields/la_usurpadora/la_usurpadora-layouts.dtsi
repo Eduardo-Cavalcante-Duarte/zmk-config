@@ -4,7 +4,7 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         transform = <&default_transform>;
-        display-name = "La Usurpadora 58";
+        display-name = "La Usurpadora";
 
         keys 
             // Matriz Principal Esquerda (5 colunas x 4 linhas)
