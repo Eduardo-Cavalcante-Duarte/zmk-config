@@ -7,71 +7,75 @@
         display-name = "La Usurpadora";
 
         keys 
-            // Matriz Principal Esquerda (5 colunas x 4 linhas)
-            = <&key_physical_attrs 100 100   0   0 0 0 0>  // L-Col1-Row1
-            , <&key_physical_attrs 100 100 100   0 0 0 0>  // L-Col2-Row1
-            , <&key_physical_attrs 100 100 200   0 0 0 0>  // L-Col3-Row1
-            , <&key_physical_attrs 100 100 300   0 0 0 0>  // L-Col4-Row1
-            , <&key_physical_attrs 100 100 400   0 0 0 0>  // L-Col5-Row1
-            
-            , <&key_physical_attrs 100 100   0 100 0 0 0>  // L-Col1-Row2
-            , <&key_physical_attrs 100 100 100 100 0 0 0>  // L-Col2-Row2
-            , <&key_physical_attrs 100 100 200 100 0 0 0>  // L-Col3-Row2
-            , <&key_physical_attrs 100 100 300 100 0 0 0>  // L-Col4-Row2
-            , <&key_physical_attrs 100 100 400 100 0 0 0>  // L-Col5-Row2
-            
-            , <&key_physical_attrs 100 100   0 200 0 0 0>  // L-Col1-Row3
-            , <&key_physical_attrs 100 100 100 200 0 0 0>  // L-Col2-Row3
-            , <&key_physical_attrs 100 100 200 200 0 0 0>  // L-Col3-Row3
-            , <&key_physical_attrs 100 100 300 200 0 0 0>  // L-Col4-Row3
-            , <&key_physical_attrs 100 100 400 200 0 0 0>  // L-Col5-Row3
-            
-            , <&key_physical_attrs 100 100   0 300 0 0 0>  // L-Col1-Row4
-            , <&key_physical_attrs 100 100 100 300 0 0 0>  // L-Col2-Row4
-            , <&key_physical_attrs 100 100 200 300 0 0 0>  // L-Col3-Row4
-            , <&key_physical_attrs 100 100 300 300 0 0 0>  // L-Col4-Row4
-            , <&key_physical_attrs 100 100 400 300 0 0 0>  // L-Col5-Row4
+            // Linha 0
+            = <&key_physical_attrs 100 100 100 0 0 0 0> // row: 0, col: 1
+            , <&key_physical_attrs 100 100 200 0 0 0 0> // row: 0, col: 2
+            , <&key_physical_attrs 100 100 300 0 0 0 0> // row: 0, col: 3
+            , <&key_physical_attrs 100 100 400 0 0 0 0> // row: 0, col: 4
+            , <&key_physical_attrs 100 100 500 0 0 0 0> // row: 0, col: 5
+            , <&key_physical_attrs 100 100 900 0 0 0 0> // row: 0, col: 8
+            , <&key_physical_attrs 100 100 1000 0 0 0 0> // row: 0, col: 9
+            , <&key_physical_attrs 100 100 1100 0 0 0 0> // row: 0, col: 10
+            , <&key_physical_attrs 100 100 1200 0 0 0 0> // row: 0, col: 11
+            , <&key_physical_attrs 100 100 1300 0 0 0 0> // row: 0, col: 12
 
-            // Matriz Principal Direita (5 colunas x 4 linhas) - Espaçada em X=700
-            , <&key_physical_attrs 100 100 700   0 0 0 0>  
-            , <&key_physical_attrs 100 100 800   0 0 0 0>  
-            , <&key_physical_attrs 100 100 900   0 0 0 0>  
-            , <&key_physical_attrs 100 100 1000  0 0 0 0>  
-            , <&key_physical_attrs 100 100 1100  0 0 0 0>  
-            
-            , <&key_physical_attrs 100 100 700 100 0 0 0>  
-            , <&key_physical_attrs 100 100 800 100 0 0 0>  
-            , <&key_physical_attrs 100 100 900 100 0 0 0>  
-            , <&key_physical_attrs 100 100 1000 100 0 0 0>  
-            , <&key_physical_attrs 100 100 1100 100 0 0 0>  
-            
-            , <&key_physical_attrs 100 100 700 200 0 0 0>  
-            , <&key_physical_attrs 100 100 800 200 0 0 0>  
-            , <&key_physical_attrs 100 100 900 200 0 0 0>  
-            , <&key_physical_attrs 100 100 1000 200 0 0 0>  
-            , <&key_physical_attrs 100 100 1100 200 0 0 0>  
-            
-            , <&key_physical_attrs 100 100 700 300 0 0 0>  
-            , <&key_physical_attrs 100 100 800 300 0 0 0>  
-            , <&key_physical_attrs 100 100 900 300 0 0 0>  
-            , <&key_physical_attrs 100 100 1000 300 0 0 0>  
-            , <&key_physical_attrs 100 100 1100 300 0 0 0>  
+            // Linha 1
+            , <&key_physical_attrs 100 100 100 100 0 0 0> // row: 1, col: 1
+            , <&key_physical_attrs 100 100 200 100 0 0 0> // row: 1, col: 2
+            , <&key_physical_attrs 100 100 300 100 0 0 0> // row: 1, col: 3
+            , <&key_physical_attrs 100 100 400 100 0 0 0> // row: 1, col: 4
+            , <&key_physical_attrs 100 100 500 100 0 0 0> // row: 1, col: 5
+            , <&key_physical_attrs 100 100 900 100 0 0 0> // row: 1, col: 8
+            , <&key_physical_attrs 100 100 1000 100 0 0 0> // row: 1, col: 9
+            , <&key_physical_attrs 100 100 1100 100 0 0 0> // row: 1, col: 10
+            , <&key_physical_attrs 100 100 1200 100 0 0 0> // row: 1, col: 11
+            , <&key_physical_attrs 100 100 1300 100 0 0 0> // row: 1, col: 12
 
-            // Dedões (5 na Esquerda, 5 na Direita) - Posicionados abaixo (Y=400)
-            , <&key_physical_attrs 100 100 100 400 0 0 0> , <&key_physical_attrs 100 100 200 400 0 0 0> 
-            , <&key_physical_attrs 100 100 300 400 0 0 0> , <&key_physical_attrs 100 100 400 400 0 0 0> 
-            , <&key_physical_attrs 100 100 500 400 0 0 0> // L-Thumbs
-            
-            , <&key_physical_attrs 100 100 600 400 0 0 0> , <&key_physical_attrs 100 100 700 400 0 0 0> 
-            , <&key_physical_attrs 100 100 800 400 0 0 0> , <&key_physical_attrs 100 100 900 400 0 0 0> 
-            , <&key_physical_attrs 100 100 1000 400 0 0 0> // R-Thumbs
+            // Linha 2
+            , <&key_physical_attrs 100 100 0 200 0 0 0> // row: 2, col: 0
+            , <&key_physical_attrs 100 100 100 200 0 0 0> // row: 2, col: 1
+            , <&key_physical_attrs 100 100 200 200 0 0 0> // row: 2, col: 2
+            , <&key_physical_attrs 100 100 300 200 0 0 0> // row: 2, col: 3
+            , <&key_physical_attrs 100 100 400 200 0 0 0> // row: 2, col: 4
+            , <&key_physical_attrs 100 100 500 200 0 0 0> // row: 2, col: 5
+            , <&key_physical_attrs 100 100 900 200 0 0 0> // row: 2, col: 8
+            , <&key_physical_attrs 100 100 1000 200 0 0 0> // row: 2, col: 9
+            , <&key_physical_attrs 100 100 1100 200 0 0 0> // row: 2, col: 10
+            , <&key_physical_attrs 100 100 1200 200 0 0 0> // row: 2, col: 11
+            , <&key_physical_attrs 100 100 1300 200 0 0 0> // row: 2, col: 12
+            , <&key_physical_attrs 100 100 1400 200 0 0 0> // row: 2, col: 13
 
-            // Mindinhos Laterais (4 de cada lado) - Colunas extras nas pontas
-            , <&key_physical_attrs 100 100 (-100) 100 0 0 0> , <&key_physical_attrs 100 100 (-100) 200 0 0 0>
-            , <&key_physical_attrs 100 100 (-200) 100 0 0 0> , <&key_physical_attrs 100 100 (-200) 200 0 0 0> // L-Pinkies
+            // Linha 3
+            , <&key_physical_attrs 100 100 0 300 0 0 0> // row: 3, col: 0
+            , <&key_physical_attrs 100 100 100 300 0 0 0> // row: 3, col: 1
+            , <&key_physical_attrs 100 100 200 300 0 0 0> // row: 3, col: 2
+            , <&key_physical_attrs 100 100 300 300 0 0 0> // row: 3, col: 3
+            , <&key_physical_attrs 100 100 400 300 0 0 0> // row: 3, col: 4
+            , <&key_physical_attrs 100 100 500 300 0 0 0> // row: 3, col: 5
+            , <&key_physical_attrs 100 100 900 300 0 0 0> // row: 3, col: 8
+            , <&key_physical_attrs 100 100 1000 300 0 0 0> // row: 3, col: 9
+            , <&key_physical_attrs 100 100 1100 300 0 0 0> // row: 3, col: 10
+            , <&key_physical_attrs 100 100 1200 300 0 0 0> // row: 3, col: 11
+            , <&key_physical_attrs 100 100 1300 300 0 0 0> // row: 3, col: 12
+            , <&key_physical_attrs 100 100 1400 300 0 0 0> // row: 3, col: 13
 
-            , <&key_physical_attrs 100 100 1200 100 0 0 0> , <&key_physical_attrs 100 100 1200 200 0 0 0>
-            , <&key_physical_attrs 100 100 1300 100 0 0 0> , <&key_physical_attrs 100 100 1300 200 0 0 0> // R-Pinkies
+            // Linha 4 (Início dos polegares e ajustes de altura)
+            , <&key_physical_attrs 100 100 200 400 0 0 0> // row: 4, col: 2
+            , <&key_physical_attrs 100 100 300 400 0 0 0> // row: 4, col: 3
+            , <&key_physical_attrs 100 100 400 500 0 0 0> // row: 4, col: 4
+            , <&key_physical_attrs 100 100 500 500 0 0 0> // row: 4, col: 5
+            , <&key_physical_attrs 100 100 600 500 0 0 0> // row: 4, col: 6
+            , <&key_physical_attrs 100 100 800 500 0 0 0> // row: 4, col: 7
+            , <&key_physical_attrs 100 100 900 500 0 0 0> // row: 4, col: 8
+            , <&key_physical_attrs 100 100 1000 500 0 0 0> // row: 4, col: 9
+            , <&key_physical_attrs 100 100 1100 400 0 0 0> // row: 4, col: 10
+            , <&key_physical_attrs 100 100 1200 400 0 0 0> // row: 4, col: 11
+
+            // Linha 5 (Cluster inferior de polegares)
+            , <&key_physical_attrs 100 100 500 600 0 0 0> // row: 5, col: 5
+            , <&key_physical_attrs 100 100 600 600 0 0 0> // row: 5, col: 6
+            , <&key_physical_attrs 100 100 800 600 0 0 0> // row: 5, col: 7
+            , <&key_physical_attrs 100 100 900 600 0 0 0> // row: 5, col: 8
             ;
     };
 };
