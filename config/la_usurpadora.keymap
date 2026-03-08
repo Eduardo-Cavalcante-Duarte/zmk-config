@@ -8,6 +8,212 @@
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
 
+    combos {
+        compatible = "zmk,combos";
+
+        a1 {
+            bindings = <&a1>;
+            key-positions = <24 16>;
+            layers = <0>;
+        };
+
+        a2 {
+            bindings = <&a2>;
+            key-positions = <24 17>;
+            layers = <0>;
+        };
+
+        a3 {
+            bindings = <&a3>;
+            key-positions = <24 18>;
+            layers = <0>;
+        };
+
+        a4 {
+            bindings = <&a4>;
+            key-positions = <24 19>;
+            layers = <0>;
+        };
+
+        o1 {
+            bindings = <&o1>;
+            key-positions = <23 16>;
+            layers = <0>;
+        };
+
+        o2 {
+            bindings = <&o2>;
+            key-positions = <23 17>;
+            layers = <0>;
+        };
+
+        o3 {
+            bindings = <&o3>;
+            key-positions = <23 18>;
+            layers = <0>;
+        };
+
+        o4 {
+            bindings = <&o4>;
+            key-positions = <23 19>;
+            layers = <0>;
+        };
+
+        game {
+            bindings = <&to 1>;
+            key-positions = <31 43>;
+            layers = <0>;
+        };
+
+        base {
+            bindings = <&to 0>;
+            key-positions = <31 43>;
+            layers = <1>;
+        };
+    };
+
+    macros {
+        a1: a1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp A>;
+            label = "A1";
+        };
+
+        a2: a2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp A>;
+            label = "A2";
+        };
+
+        a3: a3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp A>;
+            label = "A3";
+        };
+
+        a4: a4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp A>;
+            label = "A4";
+        };
+
+        e1: e1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp E>;
+            label = "E1";
+        };
+
+        e2: e2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp E>;
+            label = "E2";
+        };
+
+        e3: e3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp E>;
+            label = "E3";
+        };
+
+        e4: e4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp E>;
+            label = "E4";
+        };
+
+        i1: i1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp I>;
+            label = "I1";
+        };
+
+        i2: i2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp I>;
+            label = "I2";
+        };
+
+        i3: i3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp I>;
+            label = "I3";
+        };
+
+        i4: i4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp I>;
+            label = "I4";
+        };
+
+        o1: o1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp O>;
+            label = "O1";
+        };
+
+        u1: u1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp U>;
+            label = "U1";
+        };
+
+        o2: o2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp O>;
+            label = "O2";
+        };
+
+        u2: u2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp U>;
+            label = "U2";
+        };
+
+        o3: o3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp O>;
+            label = "O3";
+        };
+
+        u3: u3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp U>;
+            label = "U3";
+        };
+
+        o4: o4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp O>;
+            label = "O4";
+        };
+
+        u4: u4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp U>;
+            label = "U4";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,7 +228,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -37,7 +243,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -52,7 +258,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -67,7 +273,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -82,7 +288,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -97,7 +303,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -112,7 +318,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -127,7 +333,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -142,7 +348,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -157,7 +363,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -172,7 +378,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
