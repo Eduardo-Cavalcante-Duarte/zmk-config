@@ -1,5 +1,9 @@
 #include "la_usurpadora.dtsi"
 
+&default_transform {
+  col-offset = <7>;
+}
+
 / {
     chosen {
         zmk,kscan = &kscan;
