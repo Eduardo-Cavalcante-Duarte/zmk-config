@@ -271,12 +271,12 @@
 
         SYM {
             bindings = <
-               &msc SCRL_UP       &msc SCRL_DOWN  &kp N3  &kp N4               &kp N5            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-               &kp LS(RBKT)       &kp             &kp     &kp LS(NON_US_HASH)  &kp               &kp     &kp     &kp     &kp     &kp
-&kp LS(GRAVE)  &kp RIGHT_BRACKET  &kp             &kp     &kp NON_US_HASH      &kp               &kp     &kp     &kp     &kp     &kp     &kp
-&kp GRAVE      &kp LS(N9)         &kp             &kp     &kp LS(N0)           &kp               &kp     &kp     &kp     &kp     &kp     &kp
-                                  &kp             &kp     &kp                  &kp     &kp  &kp  &kp     &kp     &kp     &kp
-                                                                               &kp     &kp  &kp  &kp
+               &msc SCRL_UP       &msc SCRL_DOWN  &kp N3  &kp N4               &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+               &kp LS(RBKT)       &trans          &trans  &kp LS(NON_US_HASH)  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LS(GRAVE)  &kp RIGHT_BRACKET  &trans          &trans  &kp NON_US_HASH      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE      &kp LS(N9)         &trans          &trans  &kp LS(N0)           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans          &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                                               &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
