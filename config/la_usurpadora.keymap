@@ -303,17 +303,15 @@
 
         BASE {
             bindings = <
-         &kp NUMBER_1          &kp N2              &kp N3          &kp N4              &kp NUMBER_5                    &kp N6     &kp N7                &kp N8          &kp N9              &kp N0
-         &kp G                 &kp L               &kp T           &kp M               &kp PERIOD                      &kp COMMA  &kp U                 &kp C           &kp P               &kp V
-&kp ESC  &mt LEFT_SHIFT N      &mt LEFT_CONTROL R  &mt LEFT_ALT O  &mt LEFT_GUI A      &kp Y                           &kp W      &mt LEFT_GUI E        &mt LEFT_ALT S  &mt LEFT_CONTROL I  &mt LEFT_SHIFT D      &kp ESC
-&kp ESC  &mt LC(LEFT_SHIFT) K  &kp J               &kp F           &mt LS(LEFT_GUI) Q  &kp SLASH                       &kp INT1   &mt LG(LEFT_SHIFT) H  &kp B           &kp Z               &mt LC(LEFT_SHIFT) X  &kp ESC
-                               &kp LC(C)           &kp LC(V)       &lt 3 ESC           &lt 2 SPACE   &kp TAB  &kp RET  &kp BSPC   &kp DEL               &kp ESC         &kp ESC
-                                                                                       &kp ESC       &kp ESC  &kp ESC  &kp ESC
+             &kp F1                &kp F2              &kp F3          &kp F4              &kp F5                                &kp F6           &kp F7                &kp F8          &kp F9              &kp F11
+             &kp G                 &kp L               &kp T           &kp M               &kp PERIOD                            &kp COMMA        &kp U                 &kp C           &kp P               &kp V
+&kp LA(TAB)  &mt LEFT_SHIFT N      &mt LEFT_CONTROL R  &mt LEFT_ALT O  &mt LEFT_GUI A      &kp Y                                 &kp W            &mt LEFT_GUI E        &mt LEFT_ALT S  &mt LEFT_CONTROL I  &mt LEFT_SHIFT D      &kp ESC
+&kp RC(TAB)  &mt LC(LEFT_SHIFT) K  &kp J               &kp F           &mt LS(LEFT_GUI) Q  &kp SLASH                             &kp INT1         &mt LG(LEFT_SHIFT) H  &kp B           &kp Z               &mt LC(LEFT_SHIFT) X  &kp ESC
+                                   &kp LC(C)           &kp LC(V)       &kp ESCAPE          &lt 2 SPACE  &lt 4 TAB  &lt 4 RETURN  &lt 2 BACKSPACE  &kp DEL               &kp LC(X)       &kp RC(Z)
+                                                                                           &lt 3 MINUS  &kp ESC    &kp ESC       &kp ESC
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         GAMING {
@@ -326,24 +324,20 @@
                                                &kp ESC    &kp ESC  &kp ESC  &kp ESC
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         MOVE {
             bindings = <
-         &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6           &kp F7    &kp F8     &kp F9     &kp F10
-         &none   &none   &none   &none   &none                     &kp PRINTSCREEN  &none     &none      &none      &none
-&kp F11  &none   &none   &none   &none   &none                     &kp CAPSLOCK     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
-&kp F12  &none   &none   &none   &none   &none                     &kp INSERT       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
-                 &none   &none   &none   &none   &none  &kp ENTER  &kp BACKSPACE    &kp DEL   &none      &none
-                                         &none   &none  &none      &none
+         &kp F1    &kp F2     &kp F3     &kp F4     &kp F5                             &kp F6           &kp F7    &kp F8     &kp F9     &kp F10
+         &none     &none      &none      &none      &kp PRINTSCREEN                    &kp PRINTSCREEN  &none     &none      &none      &none
+&kp F11  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS                           &kp CAPSLOCK     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&kp F12  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS                            &kp INSERT       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+                   &none      &none      &none      &none            &none  &kp ENTER  &kp BACKSPACE    &kp DEL   &none      &none
+                                                    &none            &none  &none      &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         SYM {
@@ -356,24 +350,20 @@
                                                                      &none  &none  &none  &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_4 {
+        NUM {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans  &trans  &trans
+       &none  &none   &none   &none   &none                 &none   &none   &none   &none   &none
+       &none  &kp N1  &kp N2  &kp N3  &none                 &none   &kp N1  &kp N2  &kp N3  &none
+&none  &none  &kp N4  &kp N5  &kp N6  &none                 &none   &kp N4  &kp N5  &kp N6  &none  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none                 &none   &kp N7  &kp N8  &kp N9  &none  &none
+              &none   &none   &none   &kp N0  &none  &none  &kp N0  &none   &none   &none
+                                      &none   &none  &none  &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_5 {
@@ -386,9 +376,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_6 {
@@ -401,9 +389,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_7 {
@@ -416,9 +402,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_8 {
@@ -431,9 +415,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_9 {
@@ -446,9 +428,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_10 {
@@ -461,9 +441,7 @@
                                         &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
